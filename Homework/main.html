@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEWORK</title>
+    <style>
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #header {
+            height: 100px;
+            margin-left: 90px;
+            margin-right: 90px;
+            background-color: rgb(171, 196, 215);
+        }
+        #logo, #name{
+            display: inline-block;
+        }
+        #logo{
+            position: relative;
+            padding-top: 5px;
+            padding-left: 15px;
+            float: left;  
+        }
+        #name{
+            margin-top: 30px;
+            margin-left: 10px;
+            color: aliceblue;
+            font-size: 200%;
+        }
+
+        /*lam menu*/     
+        .menubar{
+            float: right;
+            margin-top: 20;
+            margin-right: 80px;
+        }
+        li.menu{
+            position: relative;
+            float: left;
+            margin: 10px ;
+            list-style: none;
+        }
+        a.me{
+            white-space: nowrap;
+            display: block;
+            font-size: 150%;
+            padding: 10px 50px;
+            background-color: rgb(222, 217, 211);
+            text-decoration: none;
+            color: black;
+
+        }
+        
+        /*lam submenu*/
+        ul.menubar li{
+            position: relative;
+        }
+        .submenu{
+            position: absolute;
+            list-style: none;
+          
+        }
+        .submenu a{
+            display: none;
+            font-size: 150%;
+            padding: 10px 50px;
+            background-color: rgb(222, 217, 211);
+            text-decoration: none;
+            color: black;  
+            text-align: center; 
+            white-space: nowrap;
+        }
+
+        /*lam hover*/
+        a.me:hover{
+            background-color: rgb(123, 119, 119);
+        }
+        ul.menubar li:hover .submenu{
+            margin-top: -47px;
+            margin-left: 110px;
+        }
+        ul.menubar li:hover .submenu a{
+            display: block;
+
+        }
+        .submenu a:hover{
+            background-color: rgb(123, 119, 119);
+        }
+
+        /*phan gioi thieu+content*/
+        #gt{
+            margin-top: 25px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+        #content{
+            margin-top: 130px;
+            width: 60%;
+            float: left;
+            text-align: center;
+        }
+        .nd{
+            margin-left: 60px;
+        }
+        .tentacpham{
+            margin-left: 60px;
+            font-size: 180%;
+        }
+        .kecham{
+            margin-left: 90px;
+            border-top: 2px dotted ;
+        }
+        img{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 60px;
+        }
+
+        /*promotion*/
+        #nav{
+            margin-top: 250px;
+            width: 40%;
+            float: right;
+            text-align: center;
+
+        }
+        #nav p{
+           position: fixed;
+           margin-left: 50px;
+           width: fit-content;
+           display: block;
+           padding-top: 10px;
+           padding-left: 30px;
+           padding-right: 30px;
+           padding-bottom: 30px;
+           background-color: rgb(171, 196, 215);
+        }
+
+        /*table*/
+        table{
+            margin-top: 20px;
+            margin-left: 160px;
+            width: 600px;
+            border: 1px black solid;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th{
+         text-align: center;
+            border: 1px black solid;
+             padding: 5px;
+        }
+        td{
+            padding: 5px;
+        }
+        tr:nth-child(2n-1)
+        {
+            background-color: rgb(232, 232, 232);
+        }
+        tr{
+            border-bottom: black 1px solid;
+        }
+        tr.sau:hover{
+            background-color: darkgray;
+        }
+        
+        /*text+button*/
+        input{
+            width: 500px;
+            height: 200px;
+        }
+        form{
+            padding: 10px;
+        }
+        button{
+            background-color: rgb(129, 161, 187);
+        }
+
+        /*footer*/
+
+        #footer {
+        clear: both;
+        bottom: 0;
+        margin-left: 90px;
+        margin-right: 90px;
+        background-color: rgb(171, 196, 215);
+        text-align: right;
+        }
+        #footer p{
+            font-size: 80%;
+            font-weight: 600;
+            padding: 10px;
+        }
+        #link{
+            font-style: italic;
+        }
+
+    </style>      
+</head>
+<body>
+<div class="wrapped">
+    <div id="header">
+
+        <!--logo-->
+       <div class="logo">
+       <img id="logo" src="[Images] Homework1 (1)/logo.png" alt="logo" width="170px" height="70px">
+       </div> 
+       <h3 id="name">Preminum bookshop</h3>
+
+       <!--Thanh menu-->
+        <ul  class="menubar">
+            <li class="menu"><a class="me"href="">Home</a></li>
+            <li class="menu"><a class="me"href="">Books</a></li>
+            <li class="menu">
+                <a class="me"href="">Gifts</a>
+                <ul class="submenu" id="options">
+                    <li><a  href="">kids</a></li>
+                    <li><a  href="">Adults</a></li>
+                    <li><a  href="">For All</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!--phan gioi thieu-->
+        <div id="gt">
+            <p class="gioithieu">
+            The best Bookstore Online<br>
+            Over 6 million books ready for shipment 24 hours and 4.5 million eBooks to dowload now
+            </p>
+        </div>
+        <hr>
+    </div>
+
+    <div id="nav">
+        <p>
+            10% OFF $35+ | 15% OFF $60+<br>
+            *USE CODE:HAPPYAPRIL
+        </p>
+    </div>
+
+    <!--phan noi dung-->
+    <div id="content">
+
+        <!--1-->
+        <p class="tentacpham"> The President is Missing</p>
+        <p class="nd">
+            Please join us in welcoming President Bill Clinton and the world's bestselling author <br>
+            James Patterson celebrate the release of their new novel. The President is<br>
+            Missing. A limited number of wristbands event access will be distributed<br>
+            beginning at 9am the day of the even
+        </p>
+        <img src="[Images] Homework1 (1)/clinton.jpg" alt="The president is missing" width="300px" height="400px">
+        <hr class="kecham">
+
+        <!--2-->
+        <p class="tentacpham"> 
+            True Roots: A Mindful Kitchen with More Than 100<br>
+            Recipes Free of Gluten, Dairyl, and Refined Sugar
+        </p>
+        <p class="nd">
+           In her first book, Kristin Cavallari shared her personal journey along with her tips on<br>
+            everything from style to relationships. And now, with True Roots, Cavallari shows<br>
+            you that improving the way you eat doesn't have to be difficult-a clean and toxin-<br>
+            free diet can should be fun, easy, and enjoyable. She learned the hard way that<br>
+            dieting leads nowhere good, and that a clean lifestyle is the ticket to feeling and<br>
+            being healthy
+        </p>
+        <img src="[Images] Homework1 (1)/roots.jpg" alt="True Roots" width="300px" height="400px">
+        <hr class="kecham">
+
+        <!--3-->
+        <p class="tentacpham"> 
+            Selling Boldly: Applying the New Science of Positive<br>
+            Psychology to Dramatically Increase Your Confidence<br>
+            Happiness, and Sales
+        </p>
+        <p class="nd">
+            Fear is the reason most salespeople don't like to pick up the phone. Fear is the<br>
+            reason we don't ask for the business more, even though our customers want to buy<br>
+            from us.
+        </p>
+        <img src="[Images] Homework1 (1)/selling.jpg" alt="Selling Boldly" width="300px" height="400px">
+        <hr class="kecham">
+
+        <!--4-->
+        <p class="tentacpham"> 
+           I've Got My Eyes on You (B&N Exclusive Edition)
+        </p>
+        <p class="nd">
+            A new thriller from #1 New York Times bestselling author and "Queen of Suspense"<br>
+            Mary Higgins Clark.After a party when her parents are away, eighteen-year-old Kerry<br>
+            Dowling is found fully dressed at the bottom of the family pool. The immediate<br>
+            suspect is her boyfriend who had a bitteargument with her at the party. Then there<br>
+            is a twenty-year-old neighbor who was angry because she didn't invite him to the<br>
+            party.
+        </p>
+        <img src="[Images] Homework1 (1)/mary.jpg" alt="I've got my eyes on you" width="300px" height="400px">
+        <hr class="kecham">
+        
+        <!--Ke bang -->
+        <table >
+            Our prices
+            <tr>
+                <th>Books</th>
+                <th>Year</th>
+                <th>Price</th>
+            </tr>
+            <tr class="sau">
+                <td>True Roots</td>
+                <td>2012</td>
+                <td>20$</td>
+            </tr>
+            <tr class="sau">
+                <td>Harry potter</td>
+                <td>2006</td>
+                <td>38$</td>
+            </tr>
+            <tr class="sau">
+                <td>The Outiller</td>
+                <td>2015</td>
+                <td>12$</td>
+            </tr>
+            <tr class="sau">
+                <td>The Big Data</td>
+                <td>2022</td>
+                <td>26$</td>
+            </tr>
+        </table>
+        <hr class="kecham">
+
+        <!--text submit va button-->
+        <form>
+            <lable for="text" >send feedback to us</lable><br><br>
+            <input type="text" name="text" id="text"><br>
+            <button>submit</button>
+        </form>
+        <hr class="kecham">    
+    </div>
+
+    <!--footer-->
+    
+    <div id="footer">
+            <p>
+                Barnes & Noble Bookseller, Inc, Legal Department<br>
+                122 Fifth Avenue<br>
+                New York, NY 10011<br>
+                Fax: (212) 463-5683<br>
+            </p>
+            <p id="link">Location: <a href="">Click map</a></p>
+    </div>
+</div>  
+    
+</body>
+</html>
